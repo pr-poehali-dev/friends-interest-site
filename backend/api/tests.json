@@ -1,0 +1,39 @@
+{
+  "tests": [
+    {
+      "name": "Get users returns 200",
+      "method": "GET",
+      "path": "/?action=users",
+      "expectedStatus": 200,
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Get posts returns 200",
+      "method": "GET",
+      "path": "/?action=posts",
+      "expectedStatus": 200,
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Get group messages returns 200",
+      "method": "GET",
+      "path": "/?action=group-messages",
+      "expectedStatus": 200,
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Get gallery returns 200",
+      "method": "GET",
+      "path": "/?action=gallery",
+      "expectedStatus": 200,
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Get invites returns 200",
+      "method": "GET",
+      "path": "/?action=invites&user_id=1",
+      "expectedStatus": 200,
+      "bodyMatcher": "partial"
+    }
+  ]
+}
